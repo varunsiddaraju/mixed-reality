@@ -1,12 +1,13 @@
 ---
-title: Azure Spatial Anchors tutorials - 4. Getting started with Azure Spatial Anchors
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+title: Azure Spatial Anchors tutorials - 4. Azure Spatial Anchors for Android and iOS
+description: Complete this tutorial to learn how to implement Azure Spatial Anchors within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 05/18/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens
+keywords: mixed reality, unity, tutorial, course, hololens, azure, spatial anchors
 ms.localizationpriority: high
+
 ---
 
 # 4. Azure Spatial Anchors for Android and iOS
@@ -43,10 +44,14 @@ In the Unity menu, select **Window** > **Package Manager**:
 It might take a few seconds before all packages appear in the list. Display preview packages by clicking on Advanced option and select "**Show preview packages**".
 
 <!-- TODO:VEERUBY:
-    * Required: Change image so the referenced 'Advanced' dropdown is visible.
-    * Suggestion: Also, would be nice if list was scrolled to top, so it's shown as it will be displayed to students when window is loaded
--->
-![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-2.png)
+
+* Required: Change image so the referenced 'Advanced' dropdown is visible.
+
+   * Suggestion: Also, would be nice if list was scrolled to top, so it's shown as it will be displayed to students when window is loaded
+
+  -->
+
+  ![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-2.png)
 
 In the Package Manager window, select **AR Foundation**, here you see many version and need to select version 2.1.4 and update the package by clicking the **Update to 2.1.4** button:
 
@@ -114,7 +119,7 @@ Close the Player Settings window and open the Build Settings window again. Then,
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section3-step1-4.png)
 
 > [!NOTE]
-If you get any error in the Unity Console window related to Android SDK, NDK, and/or JDK modules, you need to open Unity Hub and install the associated SDK, NDK, and JDK modules for the Android Build Support module.
+> If you get any error in the Unity Console window related to Android SDK, NDK, and/or JDK modules, you need to open Unity Hub and install the associated SDK, NDK, and JDK modules for the Android Build Support module.
 
 When the build process is complete, your applications should automatically load on your Android device.
 

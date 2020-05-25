@@ -16,8 +16,8 @@ In this tutorial, you will learn how to build your project to Android and iOS de
 
 ## Objectives
 
-* Learn how to build your project to Android device using Unity's AR Foundation and ARCore XR Plugin.
-* Learn how to build your project to an iOS device using Unity's AR Foundation and ARKit XR Plugin.
+* Learn how to build your project to Android device using Unity AR Foundation and ARCore XR Plugin.
+* Learn how to build your project to an iOS device using Unity AR Foundation and ARKit XR Plugin.
 
 [!NOTE] To complete this tutorial, make sure you have completed Azure Spatial Anchors Tutorials -> [Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md).
 
@@ -27,9 +27,9 @@ In this section, you will install Unity's inbuilt AR Foundation, ARCore XR Plugi
 
 Make sure you install the correct version of these Unity packages as listed below:
 
-- **AR Foundation 2.1.4**
-- **ARCore XR plugin 2.2.0 preview 2**
-- **ARKit XR plugin 2.1.1**
+* **AR Foundation 2.1.4**
+* **ARCore XR plugin 2.2.0 preview 2**
+* **ARKit XR plugin 2.1.1**
 
 [!NOTE] If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
 
@@ -39,19 +39,11 @@ In the Unity menu, select **Window** > **Package Manager**:
 
 It might take a few seconds before all packages appear in the list. Display preview packages by clicking on Advanced option and select "**Show preview packages.**"
 
-<!-- TODO:VEERUBY:
-
-- Required: Change image, so the referenced 'Advanced' dropdown is visible.
-
-- - Suggestion: It, would be nice if the list was scrolled to the top, so it's shown as it will be displayed to students when the window is loaded. 
-
-    -->
-
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-2.png)
 
 In the Package Manager window, select **AR Foundation**, here you see many version and need to select version 2.1.4 and update the package by clicking the **Update to 2.1.4** button:
 
-<!-- TODO:VEERUBY: *Required: For AR Foundation, the image should show the install button as 'Update to 2.1.4,' not 'Install' because the package was already installed with default version in the first tutorial of this series. -->![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-3.png)
+![mrlearning-asa](images/mrlearning-asa/tutorial4-section1-step1-3.png)
 
 To support Android devices, follow the same process to import ARCore XR Plugin 2.2.0 preview 2.
 
@@ -67,30 +59,19 @@ Customize MRTK settings to support AR Foundation by selecting MixedRealityToolKi
 
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-1.png)
 
-When you click the **Clone** button, a new Clone Profile window will appear, now you can rename this profile as "UnityARConfigurationProfile" and click the Clone button.
-<!-- TODO: VEERUBY:
-    Required: Change image, it does not show the Clone Profile window you are referring
--->
+When you click the **Clone** button, a new Clone Profile window will appear, click on the Clone button again to clone the DefaultMixedRealityToolkitProfile.
+
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-2.png)
 
-<!-- TODO: VEERUBY:
-    Required: This paragraph needs to be rewritten.
--->
 Similarly, clone the camera profile in the Inspector window and rename the profile to “UnityARConfigurationProfile” and click on the **Clone** button. In the Inspector window, locate the MixedReality, select the Camera tab Expand the camera setting providers in the inspector window and click on **+Add Camera Setting Provider** > expand **New data provider 1**> select Type **None** >select **Microsoft .MixedReality.Toolkit.Experimental.UnityAR** > Select **UnityARCameraSettings**.
 
-<!-- TODO: VEERUBY:
-    Required: Change image, it does not show the Clone Profile window you are referring to.
-    Required: Change image, the project window is inconsistent with the previous image, it doesn't show the newly created MRTK profile.
--->
+
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-3.png)
 
 With the MixedRealityToolKit object selected in the Hierarchy window, in the Inspector window, attach supporting scripts by clicking on the **Add component** button and type in AR reference Point manager and select the script.
 
 Adding the  "AR Reference Point Manager" script will automatically add "AR session origin" along with it in the Inspector window. After adding the supporting scripts, the Inspector window should look like this.
 
-<!-- TODO: VEERUBY:
-    Required: Change image, Project window is inconsistent with previous image, it doesn't show the newly created MRTK profiles.
--->
 ![mrlearning-asa](images/mrlearning-asa/tutorial4-section2-step1-4.png)
 
 ## Build application to Android device
